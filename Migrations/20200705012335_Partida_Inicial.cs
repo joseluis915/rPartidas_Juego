@@ -74,7 +74,12 @@ namespace rPartidas_Juego.Migrations
             migrationBuilder.InsertData(
                 table: "Jugadores",
                 columns: new[] { "JugadorId", "Nombres" },
-                values: new object[] { 3, "Bot" });
+                values: new object[] { 3, "Burgos" });
+
+            migrationBuilder.InsertData(
+                table: "Jugadores",
+                columns: new[] { "JugadorId", "Nombres" },
+                values: new object[] { 4, "Hernandez" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_PartidasDetalle_JugadorId",

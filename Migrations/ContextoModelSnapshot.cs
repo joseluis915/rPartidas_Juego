@@ -43,7 +43,12 @@ namespace rPartidas_Juego.Migrations
                         new
                         {
                             JugadorId = 3,
-                            Nombres = "Bot"
+                            Nombres = "Burgos"
+                        },
+                        new
+                        {
+                            JugadorId = 4,
+                            Nombres = "Hernandez"
                         });
                 });
 

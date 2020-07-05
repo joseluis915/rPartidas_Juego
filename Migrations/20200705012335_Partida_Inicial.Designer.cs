@@ -9,7 +9,7 @@ using rPartidas_Juego.DAL;
 namespace rPartidas_Juego.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20200705001440_Partida_Inicial")]
+    [Migration("20200705012335_Partida_Inicial")]
     partial class Partida_Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,7 +45,12 @@ namespace rPartidas_Juego.Migrations
                         new
                         {
                             JugadorId = 3,
-                            Nombres = "Bot"
+                            Nombres = "Burgos"
+                        },
+                        new
+                        {
+                            JugadorId = 4,
+                            Nombres = "Hernandez"
                         });
                 });
 

@@ -66,6 +66,8 @@ namespace rPartidas_Juego.UI.Registros
             {
                 MessageBox.Show($"La Id de Partida no fue encontrada.\n\nAsegurese que existe o cree una nueva.", "ERROR", MessageBoxButton.OK, MessageBoxImage.Warning);
                 Limpiar();
+                IdTextbox.Text = "";
+                IdTextbox.Focus();
             }
         }
         //—————————————————————————————————————————————————————[ AGREGAR FILA ]—————————————————————————————————————————————————————

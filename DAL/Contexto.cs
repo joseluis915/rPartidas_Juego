@@ -22,7 +22,8 @@ namespace rPartidas_Juego.DAL
             //Crear 4 jugadores
             modelBuilder.Entity<Jugadores>().HasData(new Jugadores { JugadorId = 1, Nombres = "Jose" });
             modelBuilder.Entity<Jugadores>().HasData(new Jugadores { JugadorId = 2, Nombres = "Luis" });
-            modelBuilder.Entity<Jugadores>().HasData(new Jugadores { JugadorId = 3, Nombres = "Bot" });
+            modelBuilder.Entity<Jugadores>().HasData(new Jugadores { JugadorId = 3, Nombres = "Burgos" });
+            modelBuilder.Entity<Jugadores>().HasData(new Jugadores { JugadorId = 4, Nombres = "Hernandez" });
 
             //Crear una partida
             //var partida = new Partidas();
