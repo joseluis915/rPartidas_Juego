@@ -16,7 +16,6 @@ namespace rPartidas_Juego.Entidades
 
         [ForeignKey("JugadorId")]
         public Jugadores Jugador { get; set; } = new Jugadores();
-        
         public int Posicion { get; set; }
     }
 }
