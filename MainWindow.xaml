@@ -1,0 +1,46 @@
+﻿<Window x:Class="rPartidas_Juego.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rPartidas_Juego"
+        mc:Ignorable="d"
+        Title="MENU PRINCIPAL" Height="400" Width="400" WindowStartupLocation="CenterScreen" Icon="/Resources/Home.png">
+    <Grid>
+        <StackPanel>
+            <!--——————————————————————————————————————————————[ MENU ITEMS ]——————————————————————————————————————————————-->
+            <Menu Height="24" FontSize="15">
+                <MenuItem Header="Registros">
+                    <MenuItem x:Name="rArticulosMenuItem" Click="rPartidaMenuItem_Click" Header="Registrar Partida"/>
+                </MenuItem>
+                
+                <MenuItem Header="Consultas">
+                    <MenuItem x:Name="cJugadasMenuItem" Click="cJugadasMenuItem_Click" Header="Consultar Partida"/>
+                </MenuItem>
+
+                <MenuItem Header="Ayuda">
+                    <Menu/>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <!--——————————————————————————————————————————————[ MENU PRINCIPAL ]——————————————————————————————————————————————-->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="/Resources/Home.png" Width="70"/>
+            <Label Content="Menu Principal" FontWeight="Bold" Height="50" FontSize="36" HorizontalAlignment="Center" />
+            <!--——————————————————————————————————————————————[ INFORMACION ]——————————————————————————————————————————————-->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                <Label Content="Creacion:" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
+                <Label Content="04/07/2020" FontSize="18" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Ultima modificacion:" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
+                <Label Content="04/07/2020" FontSize="18" />
+            </StackPanel>
+
+            <Label Content="©2020 José Luis Hernández" FontWeight="Bold"  FontSize="16" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+            <Label Content="Version: Beta 1.0" FontWeight="Bold" FontSize="16" FontStyle="Italic" HorizontalAlignment="Center"/>
+            <!--———————————————————————————————————————————————————————————————————————————————————————————————-->
+        </StackPanel>
+    </Grid>
+</Window>
